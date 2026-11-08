@@ -10,6 +10,7 @@
     />
     <title>Красная бейсболка — Учебный интернет-магазин</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Учебный интернет-магазин" />
     <meta
@@ -47,11 +48,17 @@
       </nav>
       <section class="product-page">
         <div class="product-page__inner">
-          <img
-            src="images/cap.webp"
-            alt="Красная бейсболка"
-            class="product-page__image"
-          />
+          <picture>
+            <source srcset="images/cap.webp" type="image/webp" />
+            <img
+              src="images/cap.webp"
+              alt="Бейсболка насыщенного красного цвета"
+              class="product-page__image"
+              loading="lazy"
+              width="300"
+              height="300"
+            />
+          </picture>
 
           <div class="product-page__info">
             <h1 class="product-page__title">Красная бейсболка</h1>
@@ -90,7 +97,7 @@
               </tbody>
             </table>
             <button
-              class="button я"
+              class="button"
               type="button"
               data-product="Красная бейсболка"
             >
@@ -192,15 +199,23 @@
               name="agreement"
               type="checkbox"
               required
-              checked 
+              checked
             />
             Я согласен на обработку данных
           </label>
         </div>
 
         <div class="form-actions">
-          <button type="button" id="close-order-dialog" class="button product-page__info">Закрыть</button>
-          <button type="submit" class="button product-page__info">Отправить заявку</button>
+          <button
+            type="button"
+            id="close-order-dialog"
+            class="button product-page__info"
+          >
+            Закрыть
+          </button>
+          <button type="submit" class="button product-page__info">
+            Отправить заявку
+          </button>
         </div>
       </form>
     </dialog>
