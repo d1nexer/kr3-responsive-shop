@@ -9,6 +9,7 @@
     />
     <title>Каталог товаров — Учебный интернет-магазин</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Учебный интернет-магазин" />
     <meta
@@ -99,55 +100,71 @@
           <h2>Список товаров</h2>
 
           <div class="products-grid">
-            <div class="products-grid">
-              <article class="product-card">
+            <article class="product-card">
+              <picture>
+                <source srcset="images/tshirt.webp" type="image/webp" />
                 <img
                   src="images/tshirt.webp"
-                  alt="Розовая футболка"
+                  alt="Розовая футболка из 100% хлопка"
                   class="product-card__image"
+                  loading="lazy"
+                  width="300"
+                  height="300"
                 />
-                <h3 class="product-card__title">Розовая футболка</h3>
-                <p class="product-card__desc">
-                  Футболка мягкого розового цвета из 100% хлопка
-                </p>
-                <p class="product-card__price">1400 руб.</p>
-                <a href="product1.html" class="button product-card__button">
-                  Заказать
-                </a>
-              </article>
+              </picture>
+              <h3 class="product-card__title">Розовая футболка</h3>
+              <p class="product-card__desc">
+                Футболка мягкого розового цвета из 100% хлопка
+              </p>
+              <p class="product-card__price">1400 руб.</p>
+              <a href="product1.html" class="button product-card__button">
+                Заказать
+              </a>
+            </article>
 
-              <article class="product-card">
+            <article class="product-card">
+              <picture>
+                <source srcset="images/jeans.webp" type="image/webp" />
                 <img
                   src="images/jeans.webp"
-                  alt="Синие джинсы"
+                  alt="Синие джинсы из плотного денима"
                   class="product-card__image"
+                  loading="lazy"
+                  width="300"
+                  height="300"
                 />
-                <h3 class="product-card__title">Синие джинсы</h3>
-                <p class="product-card__desc">
-                  Классические прямые джинсы из плотного денима
-                </p>
-                <p class="product-card__price">1800 руб.</p>
-                <a href="product2.html" class="button product-card__button">
-                  Заказать
-                </a>
-              </article>
+              </picture>
+              <h3 class="product-card__title">Синие джинсы</h3>
+              <p class="product-card__desc">
+                Классические прямые джинсы из плотного денима
+              </p>
+              <p class="product-card__price">1800 руб.</p>
+              <a href="product2.html" class="button product-card__button">
+                Заказать
+              </a>
+            </article>
 
-              <article class="product-card">
+            <article class="product-card">
+              <picture>
+                <source srcset="images/cap.webp" type="image/webp" />
                 <img
                   src="images/cap.webp"
-                  alt="Красная бейсболка"
+                  alt="Бейсболка насыщенного красного цвета"
                   class="product-card__image"
+                  loading="lazy"
+                  width="300"
+                  height="300"
                 />
-                <h3 class="product-card__title">Красная бейсболка</h3>
-                <p class="product-card__desc">
-                  Бейсболка насыщенного красного цвета, регулируемый размер
-                </p>
-                <p class="product-card__price">400 руб.</p>
-                <a href="product3.html" class="button product-card__button">
-                  Заказать
-                </a>
-              </article>
-            </div>
+              </picture>
+              <h3 class="product-card__title">Красная бейсболка</h3>
+              <p class="product-card__desc">
+                Бейсболка насыщенного красного цвета, регулируемый размер
+              </p>
+              <p class="product-card__price">400 руб.</p>
+              <a href="product3.html" class="button product-card__button">
+                Заказать
+              </a>
+            </article>
           </div>
         </section>
       </section>
