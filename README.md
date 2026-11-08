@@ -17,6 +17,7 @@
 - `css/style.css` — файл стилей;
 - `js/main.js` — файл JavaScript;
 - `images/` — папка для изображений;
+- `lighthouse/` — папка для изображений lighthouse;
 - `README.md` — описание проекта;
 - `.gitignore` — список файлов, исключённых из Git.
 - `sitemap.xml` — простая карта сайта;
@@ -61,7 +62,7 @@
 Реализованы базовые требования к первой контрольной работе.
 
 ## Ссылка на опубликованный проект
-GitHub Pages: https://d1nexer.github.io/kr1-html-css-shop/
+GitHub Pages: https://d1nexer.github.io/kr3-responsive-shop/
 
 ## Постановка контрольной работы №1
 
