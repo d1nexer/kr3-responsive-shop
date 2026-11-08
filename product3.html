@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <script src="js/main.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Контактная информация учебного интернет-магазина."
+    />
+    <title>Красная бейсболка — Учебный интернет-магазин</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Учебный интернет-магазин" />
+    <meta
+      property="og:description"
+      content="Учебный frontend-проект интернет-магазина."
+    />
+    <meta
+      property="og:image"
+      content="https://d1nexer.github.io/kr1-html-css-shop/images/preview.webp"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="site-header">
+        <a class="site-logo" href="index.html">ShopProject</a>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="order.html">Перейти к заказу</a></li>
+            <li><a href="index.html#advantages">Преимущества</a></li>
+            <li><a href="index.html#popular">Популярные товары</a></li>
+            <li><a href="index.html#contacts">Обратная связь</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span>Красная бейсболка</span>
+      </nav>
+      <section class="product-page">
+        <div class="product-page__inner">
+          <img
+            src="images/cap.webp"
+            alt="Красная бейсболка"
+            class="product-page__image"
+          />
+
+          <div class="product-page__info">
+            <h1 class="product-page__title">Красная бейсболка</h1>
+            <p class="product-page__price">400 руб.</p>
+
+            <p class="product-page__desc">
+              Классическая бейсболка насыщенного красного цвета из плотного
+              хлопка. Регулируемый ремешок сзади позволяет подогнать размер под
+              любую голову, а изогнутый козырёк защищает от солнца. Отличный
+              вариант и для прогулок, и для спорта.
+            </p>
+
+            <h2 class="product-page__subtitle">Характеристики</h2>
+            <table class="product-page__specs">
+              <tbody>
+                <tr>
+                  <th>Состав</th>
+                  <td>100% хлопок</td>
+                </tr>
+                <tr>
+                  <th>Цвет</th>
+                  <td>красный</td>
+                </tr>
+                <tr>
+                  <th>Размер</th>
+                  <td>регулируемый (56 – 60 см)</td>
+                </tr>
+                <tr>
+                  <th>Козырёк</th>
+                  <td>изогнутый</td>
+                </tr>
+                <tr>
+                  <th>Уход</th>
+                  <td>ручная стирка при 30°C</td>
+                </tr>
+              </tbody>
+            </table>
+            <button
+              class="button я"
+              type="button"
+              data-product="Красная бейсболка"
+            >
+              Заказать
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </footer>
+    <dialog
+      class="order-dialog"
+      id="order-dialog"
+      aria-labelledby="order-dialog-title"
+    >
+      <h2 id="order-dialog-title">Оформление заявки</h2>
+
+      <form
+        class="order-form"
+        id="order-form"
+        action="#"
+        method="post"
+        novalidate
+      >
+        <input id="selected-product" name="selected-product" type="hidden" />
+
+        <div class="form-field">
+          <label for="order-name">Имя</label>
+          <input
+            id="order-name"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            minlength="2"
+            autocomplete="given-name"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="order-email">E-mail</label>
+          <input
+            id="order-email"
+            name="email"
+            type="email"
+            placeholder="example@mail.ru"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="order-phone">Телефон</label>
+          <input
+            id="order-phone"
+            name="phone"
+            type="tel"
+            inputmode="tel"
+            placeholder="+7 (900) 000-00-00"
+            pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+            required
+          />
+          <small>Формат: +7 (900) 000-00-00</small>
+        </div>
+
+        <div class="form-field">
+          <label for="order-date">Дата связи</label>
+          <input id="order-date" name="date" type="date" />
+        </div>
+
+        <div class="form-field">
+          <label for="order-topic">Тема заявки</label>
+          <select id="order-topic" name="topic" required>
+            <option value="">Выберите тему</option>
+            <option value="product">Заказ товара</option>
+            <option value="consultation">Консультация</option>
+            <option value="delivery">Доставка</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="order-comment">Комментарий</label>
+          <textarea
+            id="order-comment"
+            name="comment"
+            rows="4"
+            placeholder="Укажите дополнительную информацию"
+          ></textarea>
+        </div>
+
+        <div class="form-field form-field--checkbox">
+          <label>
+            <input
+              id="order-agreement"
+              name="agreement"
+              type="checkbox"
+              required
+              checked 
+            />
+            Я согласен на обработку данных
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="close-order-dialog" class="button product-page__info">Закрыть</button>
+          <button type="submit" class="button product-page__info">Отправить заявку</button>
+        </div>
+      </form>
+    </dialog>
+
+    <p class="success-message" id="success-message" hidden>
+      Форма успешно отправлена!
+    </p>
+  </body>
+</html>

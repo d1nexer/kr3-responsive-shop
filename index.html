@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Учебный интернет-магазин</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Учебный интернет-магазин" />
+    <meta
+      property="og:description"
+      content="Учебный frontend-проект интернет-магазина."
+    />
+    <meta
+      property="og:image"
+      content="https://d1nexer.github.io/kr1-html-css-shop/images/preview.webp"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="site-header">
+        <a class="site-logo" href="index.html">ShopProject</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="order.html">Перейти к заказу</a></li>
+            <li><a href="index.html#advantages">Преимущества</a></li>
+            <li><a href="index.html#popular">Популярные товары</a></li>
+            <li><a href="index.html#contacts">Обратная связь</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="hero__title">Учебный интернет-магазин</h1>
+        <p class="hero__text">
+          Многостраничный проект интернет-магазина с семантической вёрсткой,
+          БЭМ-архитектурой, модальным окном заказа и таблицей характеристик.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#popular"
+            >Популярные товары</a
+          >
+          <a class="button button--secondary" href="catalog.html"
+            >Перейти в каталог</a
+          >
+        </div>
+      </section>
+      <!-- Основное содержимое страницы -->
+      <section class="section" id="popular">
+        <h2>Популярные товары</h2>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <h3>Розовая футболка</h3>
+            <p>Розовая футболка мягкого оттенка.</p>
+            <p>Цена: 1400 руб.</p>
+            <a href="product1.html" class="a-button"> Заказать </a>
+          </article>
+
+          <article class="product-card">
+            <h3>Синие джинсы</h3>
+            <p>Синие джинсы повседневные.</p>
+            <p>Цена: 1800 руб.</p>
+            <a href="product2.html" class="a-button"> Заказать </a>
+          </article>
+
+          <article class="product-card">
+            <h3>Красная бейсболка</h3>
+            <p>Красная бархатная кепка.</p>
+            <p>Цена: 400 руб.</p>
+            <a href="product3.html" class="a-button"> Заказать </a>
+          </article>
+        </div>
+      </section>
+      <section class="section advantages" id="advantages">
+        <h2 class="section__title">Почему выбирают нас</h2>
+
+        <div class="advantages__grid">
+          <article class="advantage-card">
+            <div class="advantage-card__icon" aria-hidden="true">🚚</div>
+            <h3 class="advantage-card__title">Быстрая доставка</h3>
+            <p class="advantage-card__text">
+              Отправляем заказы в день оформления. По городу — курьером за 1–2
+              дня, по России — от 3 дней.
+            </p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="advantage-card__icon" aria-hidden="true">💳</div>
+            <h3 class="advantage-card__title">Удобная оплата</h3>
+            <p class="advantage-card__text">
+              Принимаем карты, электронные кошельки и наличные при получении.
+              Все платежи защищены.
+            </p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="advantage-card__icon" aria-hidden="true">↩️</div>
+            <h3 class="advantage-card__title">Возврат 14 дней</h3>
+            <p class="advantage-card__text">
+              Не подошло — вернём деньги без вопросов. Обмен размера и цвета в
+              течение двух недель.
+            </p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="advantage-card__icon" aria-hidden="true">🎧</div>
+            <h3 class="advantage-card__title">Поддержка 24/7</h3>
+            <p class="advantage-card__text">
+              Отвечаем на вопросы в чате, по телефону и почте. Помогаем с
+              выбором размера и оформлением.
+            </p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="advantage-card__icon" aria-hidden="true">✅</div>
+            <h3 class="advantage-card__title">Только оригинал</h3>
+            <p class="advantage-card__text">
+              Работаем напрямую с поставщиками. Каждый товар проходит проверку
+              перед отправкой.
+            </p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="advantage-card__icon" aria-hidden="true">🎁</div>
+            <h3 class="advantage-card__title">Бонусы за покупки</h3>
+            <p class="advantage-card__text">
+              Начисляем баллы за каждый заказ. Копятся быстро, тратятся на
+              следующий заказ.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="aside-info">
+        <h2>Информация для студентов</h2>
+        <p>
+          На следующих практических занятиях этот проект будет расширяться:
+          появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
+          БЭМ-структура и адаптивная версия сайта.
+        </p>
+      </aside>
+    </main>
+    <footer id="contacts">
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </footer>
+  </body>
+</html>
